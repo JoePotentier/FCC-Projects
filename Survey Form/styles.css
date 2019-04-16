@@ -1,0 +1,118 @@
+:root {
+    --bitcoin-orange: #FF9900;
+    --eerie-black: #191716;
+    --gainsboro-grey: #E0E2DB;
+    --dark-slate-blue: #3D348B;
+    --black-shadows: #BEB7A4;
+}
+
+body {
+    font-family: 'Electrolize', sans-serif;
+    font-weight: 600;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px auto 0px auto;
+    padding: 5px 0px 5px 0px;
+    background-color: var(--bitcoin-orange);
+}
+
+#description {
+    background-color: var(--black-shadows);
+    text-align: center;
+    margin: 0px auto 0px auto;
+    padding: 5px 0px 5px 0px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#form-outer {
+    width: 80%;
+    margin: 0px auto 0px auto;
+    padding: 25px 30px 10px 30px;
+    border: 15px solid var(--dark-slate-blue);
+    border-top-width: 0px;
+    border-radius: 4px;
+}
+
+.row-tab {
+    display: block;
+}
+
+.labels {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 49%;
+    vertical-align: middle;
+}
+
+@media (max-width: 520px) {
+    .labels {
+        display: block;
+        margin-left: 20px;
+        text-align: left;
+        width: 100%;
+
+    }
+    .rightTab {
+        display: block;
+        width: 80%;
+        margin-left: 21%;
+        text-align: left;
+    }
+}
+
+.footer {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+
+#submit {
+    margin: 5px auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+
+}
+
+label {
+    font-size: 20px;
+}
+
+@media (max-width: 520px) {
+    label {
+        font-size: 17px;
+    }
+
+    #comments {
+        width: 100%;
+    }
+
+    #comment-area {
+        margin: 0px auto;
+        width: 90%;
+    }
+
+form {
+    text-align: center;
+}
+
+#comments {
+    height: 62px;
+    margin-top: 10px;
+}
+
