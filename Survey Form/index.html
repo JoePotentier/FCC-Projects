@@ -1,137 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
-</head>
-<body>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-    <div class="header">
-    <h1 id="title">Cryptocurrency Survey</h1>
-    <p id="description">This survey aims to help our company better understand the pain points that our users face when using cryptocurrency systems.</p>
-    </div>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+    </head>
+    <body>
+        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+        <div class="header">
+        <h1 id="title">Cryptocurrency Survey</h1>
+        <p id="description">This survey aims to help our company better understand the pain points that our users face when using cryptocurrency systems.</p>
+        </div>
 
-    <div id="form-outer">
-        <form id="survey-form" action="">
-            <!-- Name Input -->
-            <div class="rowTab">
-                <div class="labels">
-                    <label for="name" id="name-label"> Name: </label>
+        <div id="form-outer">
+            <form id="survey-form" action="">
+                <!-- Name Input -->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="name" id="name-label"> Name: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="name" type="text" placeholder="Billie Bob" required>
+                    </div>
                 </div>
-                <div class="rightTab">
-                    <input id="name" type="text" placeholder="Billie Bob" required>
-                </div>
-            </div>
 
-            <!-- Email Input -->
-            <div class="rowTab">
-                <div class="labels">
-                    <label for="email" id="email-label"> Email: </label>
+                <!-- Email Input -->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="email" id="email-label"> Email: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="email" type="email" placeholder="billeBob@email.com" required>
+                    </div>
                 </div>
-                <div class="rightTab">
-                    <input id="email" type="email" placeholder="billeBob@email.com" required>
-                </div>
-            </div>
 
-            <!-- Age Input -->
-            <div class="rowTab">
-                <div class="labels">
-                    <label for="number" id="number-label"> Age: </label>
+                <!-- Age Input -->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="number" id="number-label"> Age: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input id="number" type="number" min="1" max="122" placeholder="54">
+                    </div>
                 </div>
-                <div class="rightTab">
-                    <input id="number" type="number" min="1" max="122" placeholder="54">
-                </div>
-            </div>
 
-            <!-- Capture Experience Level -->
-            <div class="rowTab">
-                <div class="labels">
-                <label for="dropdown"> How long have you been using cryptocurrecy?</label>
+                <!-- Capture Experience Level -->
+                <div class="rowTab">
+                    <div class="labels">
+                    <label for="dropdown"> How long have you been using cryptocurrecy?</label>
+                    </div>
+                     <div class="rightTab">
+                        <select id="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option value="1">less than a year</option>
+                            <option value="2">1-2 years</option>
+                            <option value="3">2-5 years</option>
+                            <option value="4">5+ years</option>
+                        </select>
+                    </div>
                 </div>
-                 <div class="rightTab">
-                    <select id="dropdown">
-                        <option disabled value>Select an option</option>
-                        <option value="1">less than a year</option>
-                        <option value="2">1-2 years</option>
-                        <option value="3">2-5 years</option>
-                        <option value="4">5+ years</option>
-                    </select>
-                </div>
-            </div>
 
-            <!-- Capture Usage Level -->
-            <div class="rowTab">
-                <div class="labels">
-                    <p>How often do you make transactions using cryptocurrency?</p>
+                <!-- Capture Usage Level -->
+                <div class="rowTab">
+                    <div class="labels">
+                        <p>How often do you make transactions using cryptocurrency?</p>
+                    </div>
+                    <div class="rightTab">
+                        <ul>
+                            <li>
+                                <label for="used-daily">
+                                    <input value="used-daily" type="radio" name="how-often-used"> Daily
+                                </label>
+                            </li>
+                            <li>
+                                <label for="used-weekly">
+                                    <input value="used-weekly" type="radio" name="how-often-used"> Weekly
+                                </label>
+                            </li>
+                            <li>
+                                <label for="used-monthly">
+                                    <input value="used-monthly" type="radio" name="how-often-used"> Monthly
+                                </label>
+                            </li>
+                            <li>
+                                <label for="used-yearly">
+                                    <input value="used-yearly" type="radio" name="how-often-used"> A few times per year
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="rightTab">
-                    <ul>
-                        <li>
-                            <label for="used-daily">
-                                <input value="used-daily" type="radio" name="how-often-used"> Daily
-                            </label>
-                        </li>
-                        <li>
-                            <label for="used-weekly">
-                                <input value="used-weekly" type="radio" name="how-often-used"> Weekly
-                            </label>
-                        </li>
-                        <li>
-                            <label for="used-monthly">
-                                <input value="used-monthly" type="radio" name="how-often-used"> Monthly
-                            </label>
-                        </li>
-                        <li>
-                            <label for="used-yearly">
-                                <input value="used-yearly" type="radio" name="how-often-used"> A few times per year
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Capture where crypto is being used -->
-            <div class="rowTab">
-                <div class="labels">
-                    <p>Where do you often use your cryptocurrency? (Select any that apply)</p>
+                <!-- Capture where crypto is being used -->
+                <div class="rowTab">
+                    <div class="labels">
+                        <p>Where do you often use your cryptocurrency? (Select any that apply)</p>
+                    </div>
+                    <div class="rightTab">
+                        <ul>
+                            <li class="checkbox">
+                                <label for="online">
+                                    <input id="online" type="checkbox" name="where-used" value="1"> Online Purchases
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label for="HODLing">
+                                    <input id="HODLing" type="checkbox" name="where-used" value="2"> Long Term Storage
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label for="Retail">
+                                    <input id="Retail" type="checkbox" name="where-used" value="3"> Retail Purchases
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="rightTab">
-                    <ul>
-                        <li class="checkbox">
-                            <label for="online">
-                                <input id="online" type="checkbox" name="where-used" value="1"> Online Purchases
-                            </label>
-                        </li>
-                        <li class="checkbox">
-                            <label for="HODLing">
-                                <input id="HODLing" type="checkbox" name="where-used" value="2"> Long Term Storage
-                            </label>
-                        </li>
-                        <li class="checkbox">
-                            <label for="Retail">
-                                <input id="Retail" type="checkbox" name="where-used" value="3"> Retail Purchases
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Capture additional comments-->
-            <div class="rowTab">
-                <div class="labels">
-                    <label for="comments">
-                        If there was one thing that you could change to make cryptocurrency easier to use, what would it be?
-                    </label>
+                <!-- Capture additional comments-->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="comments">
+                            If there was one thing that you could change to make cryptocurrency easier to use, what would it be?
+                        </label>
+                    </div>
+                    <div class="rightTab" id="comment-area">
+                        <textarea id="comments" class="input-feild" name="comment" placeholder="Enter your comment here..."></textarea>
+                    </div>
                 </div>
-                <div class="rightTab" id="comment-area">
-                    <textarea id="comments" class="input-feild" name="comment" placeholder="Enter your comment here..."></textarea>
-                </div>
-            </div>
 
-            <div class="footer">
-                <button id="submit" type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-</body>
+                <div class="footer">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

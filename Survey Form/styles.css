@@ -10,6 +10,7 @@ body {
     font-family: 'Electrolize', sans-serif;
     font-weight: 600;
     margin: 0px;
+    background-color: var(--gainsboro-grey);
 }
 
 h1 {
