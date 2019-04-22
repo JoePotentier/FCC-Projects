@@ -4,10 +4,13 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     box-shadow: 10px 0px 10px rgba(0,0,0, .2);
     height: 79px;
     margin-bottom: 20px;
+    background: white;
 }
 .titles {
     display: flex;
@@ -18,7 +21,7 @@ header {
 
 #title {
     font-size: 70px;
-    margin: 5px 0px 5px 0px;
+    margin: 79px 0px 5px 0px;
 }
 
 #sub-title {
@@ -26,11 +29,35 @@ header {
     margin: 0px 0px 0px 0px;
 }
 
-#header-img {
+.logo-link {
     height: 154px;
-    margin: 2px 10px 2px 10px;
+    margin: 0px calc(100vw - 302px - (3 * 175px)) 0px 10px;
+    width: 292px;
 }
 
+#header-img {
+    height: 154px;
+}
+
+@media (max-width: 950px) {
+    .logo-link {
+        height: 77px;
+        margin: 0px calc(100vw - 302px - (3 * 175px) + 146px) 0px 10px;
+        width: 146px;
+    }
+
+    #header-img {
+    height: 77px;
+    }
+
+    #package-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 950px;
+    margin: 0px auto 15px auto;
+    flex-flow: column nowrap;
+    }
+}
 #nav-bar {
     display: flex;
     flex-flow: row;
@@ -61,19 +88,202 @@ main {
     width: 90%;
 }
 
-form {
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-}
+
 
 .embeded {
     margin: 20px auto;
-    width: 560px;
-    height: 315px;
+    width: 640px;
+    height: 360px;
 }
 
 iframe {
     width: 100%;
     height: 100%;
+}
+
+#features {
+    padding: 20px 0px;
+}
+
+.f-section {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 950px;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+#f-image1 {
+    margin: auto 52px;
+    color: #4D7434;
+}
+
+#f-image2 {
+    margin: auto 47px;
+    color: #4D7434;
+}
+
+#f-image3 {
+    margin: auto 40px;
+    color: #4D7434;
+}
+
+.low-margin-h1 {
+    margin: 20px auto 0px auto;
+}
+
+p {
+    margin-top: 5px;
+}
+
+#package-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 950px;
+    margin: 0px auto 15px auto;
+}
+
+.package-boxes {
+    border: 2px solid;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    margin: 20px auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin: 15px auto;
+}
+
+.spec-list {
+    text-align: left;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 15px auto 15px auto;
+    padding: 0px;
+    width: 70%;
+    height: 60%;
+}
+
+.align-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    height: calc(100% - 40px - 42px);
+}
+
+.package-title {
+    width: 100%;
+    background-color: #DDDDDD;
+    margin: 0px;
+    padding: 10px 0px;
+    color: #172121;
+}
+
+.package-price {
+    width: 100%;
+    background-color: #E8AA00;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+}
+
+footer {
+    background-color: white;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 10px 0px 10px rgba(0,0,0, .2);
+    margin-top: 30px;
+}
+
+#email-section {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px 20px 5px 0px;
+}
+
+#submit {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffc83d;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffc83d;
+    box-shadow:inset 0px 1px 0px 0px #ffc83d;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e8aa00), color-stop(1, #cf9b19));
+    background:-moz-linear-gradient(top, #e8aa00 5%, #cf9b19 100%);
+    background:-webkit-linear-gradient(top, #e8aa00 5%, #cf9b19 100%);
+    background:-o-linear-gradient(top, #e8aa00 5%, #cf9b19 100%);
+    background:-ms-linear-gradient(top, #e8aa00 5%, #cf9b19 100%);
+    background:linear-gradient(to bottom, #e8aa00 5%, #cf9b19 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8aa00', endColorstr='#cf9b19',GradientType=0);
+    background-color:#e8aa00;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #806215;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #7a601d;
+}
+#submit:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cf9b19), color-stop(1, #e8aa00));
+    background:-moz-linear-gradient(top, #cf9b19 5%, #e8aa00 100%);
+    background:-webkit-linear-gradient(top, #cf9b19 5%, #e8aa00 100%);
+    background:-o-linear-gradient(top, #cf9b19 5%, #e8aa00 100%);
+    background:-ms-linear-gradient(top, #cf9b19 5%, #e8aa00 100%);
+    background:linear-gradient(to bottom, #cf9b19 5%, #e8aa00 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf9b19', endColorstr='#e8aa00',GradientType=0);
+    background-color:#cf9b19;
+}
+#submit:active {
+    position:relative;
+    top:1px;
+}
+
+.select-product {
+    -moz-box-shadow:inset 0px 1px 0px 0px #75ab52;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #75ab52;
+    box-shadow:inset 0px 1px 0px 0px #75ab52;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4c7434), color-stop(1, #466631));
+    background:-moz-linear-gradient(top, #4c7434 5%, #466631 100%);
+    background:-webkit-linear-gradient(top, #4c7434 5%, #466631 100%);
+    background:-o-linear-gradient(top, #4c7434 5%, #466631 100%);
+    background:-ms-linear-gradient(top, #4c7434 5%, #466631 100%);
+    background:linear-gradient(to bottom, #4c7434 5%, #466631 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c7434', endColorstr='#466631',GradientType=0);
+    background-color:#4c7434;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #425733;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3b4f2e;
+    width: 60%;
+    margin: 0px auto;
+}
+.select-product:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #466631), color-stop(1, #4c7434));
+    background:-moz-linear-gradient(top, #466631 5%, #4c7434 100%);
+    background:-webkit-linear-gradient(top, #466631 5%, #4c7434 100%);
+    background:-o-linear-gradient(top, #466631 5%, #4c7434 100%);
+    background:-ms-linear-gradient(top, #466631 5%, #4c7434 100%);
+    background:linear-gradient(to bottom, #466631 5%, #4c7434 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#466631', endColorstr='#4c7434',GradientType=0);
+    background-color:#466631;
+}
+.select-product:active {
+    position:relative;
+    top:1px;
 }

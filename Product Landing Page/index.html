@@ -4,19 +4,20 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <header id="header">
-            <a href="#"><img id="header-img" src="https://drive.google.com/uc?id=1HQfxyBGmPaeIPJSC6lTymes2VyCOg8G4" alt="MPG Logo"></a>
+            <a class="logo-link" href="#"><img id="header-img" src="https://drive.google.com/uc?id=1HQfxyBGmPaeIPJSC6lTymes2VyCOg8G4" alt="MPG Logo"></a>
             <nav id="nav-bar">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#features">
                     <h2 class="nav-button">Features</h2>
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#how-it-works">
                     <h2 class="nav-button">How It Works</h2>
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#pricing">
                     <h2 class="nav-button">Pricing</h2>
                 </a>
             </nav>
@@ -27,15 +28,90 @@
                 <h2 id="sub-title">The smartest, best looking <strong>space bucket</strong> kit on the market!</h2>
             </div>
             <hr>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <label for="email">Email: </label>
-                <input id="email" name="email" type="email" placeholder="bob@email.com" required>
-                <input id="submit" type="submit" name="">
-            </form>
-            <div class="embeded">
-                <iframe src="https://player.vimeo.com/video/273733110?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <div class="features" id="features">
+                <div class="f-section">
+                    <div id="f-image1">
+                        <i class="fa fa-3x fa-fire"></i>
+                    </div>
+                    <div id="f-text">
+                        <h1 class="low-margin-h1">Premium Materials</h1>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+                <div class="f-section">
+                    <div id="f-image2">
+                        <i class="fa fa-3x fa-truck"></i>
+                    </div>
+                    <div id="f-text">
+                        <h1 class="low-margin-h1">Fast Shipping</h1>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="f-section">
+                    <div id="f-image3">
+                        <i class="fa fa-3x fa-battery-full"></i>
+                    </div>
+                    <div id="f-text">
+                        <h1 class="low-margin-h1">Quality Assurance</h1>
+                        <p>Each purchase is checked and tested before shipping for any potential defects. We will also replace any faulty components, no questions asked.</p>
+                    </div>
+                </div>
             </div>
-
+            <hr>
+            <h2 class="section-title" id="how-it-works">How It Works</h2>
+            <div class="embeded">
+                <iframe id="video" src="https://player.vimeo.com/video/273733110?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div id="pricing">
+                <h2 class="section-title">Change The Way You Flower</h2>
+                <div id="package-container">
+                    <div class="package-boxes">
+                        <h3 class="package-title">Basic+</h3>
+                        <h4 class="package-price">$99</h4>
+                        <div class="align-bottom">
+                            <ul class="spec-list">
+                                <li>Space Bucket Container</li>
+                                <li>Light Supply</li>
+                                <li>Airflow Kit</li>
+                            </ul>
+                            <a href="#" class="select-product">SELECT</a>
+                        </div>
+                    </div>
+                    <div class="package-boxes">
+                        <h3 class="package-title">Pro</h3>
+                        <h4 class="package-price">$129</h4>
+                        <div class="align-bottom">
+                            <ul class="spec-list">
+                                <li>Everything from Basic+</li>
+                                <li>Plant monitoring computer</li>
+                                <li>EasyWater&trade; system</li>
+                            </ul>
+                            <a href="#" class="select-product">SELECT</a>
+                        </div>
+                    </div>
+                    <div class="package-boxes">
+                        <h3 class="package-title">Ultra</h3>
+                        <h4 class="package-price">$149</h4>
+                        <div class="align-bottom">
+                            <ul class="spec-list">
+                                <li>Everything from Pro</li>
+                                <li>AutoWater system</li>
+                                <li>Led lighting system</li>
+                            </ul>
+                            <a href="#" class="select-product">SELECT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+        <footer>
+            <div id="email-section">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <label for="email">Enter your email to join our <strong>FIRST IN LINE</strong> exlusive newsletter:</label>
+                    <input id="email" name="email" type="email" placeholder="bob@email.com" required>
+                    <input id="submit" type="submit" name="">
+                </form>
+        </footer>
     </body>
 </html>
